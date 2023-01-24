@@ -1,0 +1,197 @@
+@media (max-width: 480px) {
+    .textoMedio {
+        font-size: 1.5em !important;
+    }
+
+    .textoMedio p img {
+        width: 50px !important;
+    }
+
+    audio {
+        width: 200px;
+    }
+}
+
+@media (max-width: 767px) {
+    
+    .enlaces {
+        justify-content: none !important;
+    }
+    .footer p{
+        font-size: 12px !important;
+    }
+    .enlaces a {
+        background-color: black;
+        padding: none !important;
+        margin: 10px !important;
+        box-shadow: none !important;
+    }
+
+    .enlaces ul li {
+        height: 30px;
+    }
+    .zoom {
+        display: none !important;
+    }
+}
+
+@media (max-width: 992px) {
+
+
+    .enlaces a {
+        font-size: 0.30em !important;
+        padding: none !important;
+        margin: 20px !important;
+        box-shadow: none !important;
+    }
+
+    .enlaces ul li {
+        height: 30px;
+    }
+
+    .zoom {
+        display: none !important;
+    }
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
+:root {
+    --rojo: rgb(179, 21, 21);
+    --morao: rgb(84, 26, 241);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    height: 175px;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    font-family: 'Caveat';
+    font-size: 2em;
+}
+
+
+.enlaces {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.enlaces a {
+    box-shadow: 0px 3px 4px #888888ab;
+    padding: 20px 60px 20px 60px;
+    margin: 10px;
+    border-style: dashed;
+    border-color: var(--morao);
+    color: var(--rojo);
+    text-decoration: none;
+    border-top: none;
+    border-left: none;
+    align-self: center;
+}
+
+.enlaces a:hover {
+    color: aqua !important;
+}
+
+.textoMedio {
+    font-family: 'Caveat';
+    font-size: 2.5em;
+    color: white;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-end;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.textoMedio p img {
+    width: 75px;
+}
+
+.textoMedio p {
+    align-self: center;
+}
+
+.textoMedio p:nth-child(2),
+p:nth-child(3),
+p:nth-child(7) {
+    font-family: 'Arial';
+    font-size: 0.5em;
+    color: white;
+}
+
+
+
+.enlaces a:first-child {
+    border-top: none !important;
+    border-style: dashed;
+    border-color: var(--morao);
+}
+
+footer {
+    display: flex;
+    padding-top: 20px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    color: grey;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: grey;
+}
+
+section {
+    background-image: url("../imagenes/imagenfurra.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container {
+    padding-right: 1000px;
+    text-align: center;
+}
+
+.zoom {
+    transition: transform .9s;
+    width: 400px;
+    height: 200px;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+    transform: rotateY(360deg) scale(1.5);
+}
+
+.fondoBorroso {
+    background-color: rgba(0, 0, 0, 0.61);
+    backdrop-filter: blur(5px);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#furros{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
